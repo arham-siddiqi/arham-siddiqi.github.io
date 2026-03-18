@@ -2,51 +2,246 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Arham Siddiqi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arham Siddiqi | Software Engineer</title>
+
 <style>
-body{
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 40px auto;
-    line-height: 1.6;
-    padding: 0 20px;
+:root{
+--accent:#6b7cff;
+--bg:#0f1221;
+--card:#171a2e;
+--text:#e9ecff;
+--muted:#9aa3d4;
 }
-h1{margin-bottom:5px;}
-.links a{margin-right:15px;}
-.project{margin-bottom:20px;}
+
+body{
+margin:0;
+font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;
+background:var(--bg);
+color:var(--text);
+line-height:1.6;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:40px 20px;
+}
+
+h1,h2{
+margin-top:0;
+}
+
+header{
+margin-bottom:40px;
+}
+
+.tag{
+color:var(--accent);
+font-weight:600;
+}
+
+.links a{
+color:var(--text);
+margin-right:15px;
+text-decoration:none;
+font-weight:500;
+}
+
+.section{
+margin-bottom:45px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:18px;
+}
+
+.card{
+background:var(--card);
+padding:18px;
+border-radius:10px;
+}
+
+.skill{
+display:inline-block;
+background:var(--card);
+padding:6px 10px;
+border-radius:6px;
+margin:4px;
+font-size:14px;
+}
+
+footer{
+margin-top:40px;
+color:var(--muted);
+font-size:14px;
+}
 </style>
 </head>
 
 <body>
 
+<div class="container">
+
+<header>
 <h1>Arham Siddiqi</h1>
-<p>Computer Systems Engineering student at Carleton University (12.0 CGPA). Interested in software engineering, systems programming, and open-source development.</p>
+<p class="tag">Software Engineering • Systems Programming • Open Source</p>
+
+<p>
+Computer Systems Engineering student at Carleton University with a 12.0 CGPA.
+I enjoy building practical software systems, automation tools, and open-source
+projects that solve real problems. My work focuses on Linux systems,
+embedded devices, backend services, and developer tooling.
+</p>
 
 <div class="links">
 <a href="https://github.com/arham-siddiqi">GitHub</a>
 <a href="https://linkedin.com/in/arhamsiddiqi">LinkedIn</a>
 <a href="mailto:arhamsiddiqi07@gmail.com">Email</a>
 </div>
+</header>
 
+
+<section class="section">
 <h2>Projects</h2>
 
-<div class="project">
-<b>Digital Signage Automation System</b><br>
-Raspberry Pi system automating community displays using Python, REST APIs, and Linux services.
+<div class="grid">
+
+<div class="card">
+<h3>Digital Signage Automation System</h3>
+<p>
+Full-stack Raspberry Pi system automating community display boards through a
+Python backend and REST API pipeline integrated with Google Sheets.
+</p>
+
+<p>
+Features automated content deployment, systemd services for reliability,
+and remote updates via Git workflows.
+</p>
+
+<p><b>Impact:</b> Reduced update time from hours to seconds and increased
+program registrations by ~20%.
+</p>
 </div>
 
-<div class="project">
-<b>HealthHero Android App</b><br>
-Android fitness app built with Java and Firebase supporting real-time progress tracking.
+<div class="card">
+<h3>HealthHero Android App</h3>
+<p>
+Fitness tracking application built in Java with Firebase backend services.
+</p>
+
+<p>
+Implements real-time progress tracking, analytics dashboards,
+and leaderboard-style engagement mechanics.
+</p>
+
+<p>
+Designed collaboratively using Agile development practices.
+</p>
 </div>
 
-<div class="project">
-<b>Website Transformation</b><br>
-Rebuilt a charity website with WordPress and custom HTML/CSS improving navigation and usability.
+<div class="card">
+<h3>Website Modernization for Nonprofit</h3>
+<p>
+Rebuilt a legacy nonprofit website using WordPress, Elementor,
+and custom HTML/CSS components.
+</p>
+
+<p>
+Implemented modern UI/UX patterns and simplified site navigation,
+reducing inbound information requests by ~30%.
+</p>
 </div>
 
-<h2>Skills</h2>
-<p>Python, C, Java, JavaScript, Linux, Git, REST APIs, Android Development, Raspberry Pi</p>
+</div>
+</section>
+
+
+<section class="section">
+<h2>Technical Skills</h2>
+
+<div>
+<span class="skill">Python</span>
+<span class="skill">C</span>
+<span class="skill">Java</span>
+<span class="skill">JavaScript</span>
+<span class="skill">Linux</span>
+<span class="skill">Git</span>
+<span class="skill">REST APIs</span>
+<span class="skill">Android Development</span>
+<span class="skill">Firebase</span>
+<span class="skill">Raspberry Pi</span>
+<span class="skill">Bash</span>
+<span class="skill">HTML/CSS</span>
+</div>
+
+</section>
+
+
+<section class="section">
+<h2>Open Source & Development Interests</h2>
+
+<p>
+I am particularly interested in contributing to open-source projects related to:
+</p>
+
+<ul>
+<li>Systems programming and developer tooling</li>
+<li>Linux infrastructure and automation</li>
+<li>Networking and distributed systems</li>
+<li>Security tooling and vulnerability research</li>
+</ul>
+
+<p>
+My current work emphasizes building maintainable software with strong
+documentation and clear interfaces so that teams and communities can
+collaborate effectively.
+</p>
+
+</section>
+
+
+<section class="section">
+<h2>Leadership & Community</h2>
+
+<p>
+I regularly organize and lead educational workshops focused on
+STEM and technology topics including programming, engineering design,
+and problem-solving.
+</p>
+
+<p>
+During summer programming camps I facilitated hands-on engineering
+activities and technical challenges for groups of students,
+encouraging curiosity and experimentation with technology.
+</p>
+
+</section>
+
+
+<section class="section">
+<h2>Education</h2>
+
+<p>
+<b>Carleton University</b><br>
+Bachelor of Engineering — Computer Systems Engineering
+</p>
+
+<p>
+CGPA: 12.0 / 12.0<br>
+University Entrance Scholarship • PIPSC Legacy Foundation Scholarship
+</p>
+
+</section>
+
+
+<footer>
+Built and hosted using GitHub Pages.
+</footer>
+
+</div>
 
 </body>
 </html>
